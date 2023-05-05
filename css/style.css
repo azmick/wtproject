@@ -1,0 +1,60 @@
+.body {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    margin-top: 20px;
+    width: 30em;
+    height: 30em;
+}
+
+.nav-link {
+    color:green;
+}
+
+.navbar-nav .nav-link {
+    color: green;
+}
+
+.profile-pic {
+    width: 200px; /* istediğiniz genişliği buradan ayarlayabilirsiniz */
+    height: 200px; /* istediğiniz yüksekliği buradan ayarlayabilirsiniz */
+    border-radius: 50%; /* dairesel yapının köşelerinin yuvarlatılmasını sağlar */
+    background-color: #e5e5e5; /* dairesel yapının arkaplan rengi */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    transition: transform 0.5 ease-in-out;
+    border: 2px solid #00ff00;
+    box-shadow: 0 0 5px rgb(0, 255, 0);
+    z-index: 2;
+}
+
+.profile-pic.clicked {
+    transform: translateY(-25%);
+  }
+
+.info-container {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    width: 1200px;
+    height: 630px;
+    margin-top: 28px;
+    box-shadow: 0 0 10px rgba(0, 255,0);
+    z-index: 1;
+ }
+
+ #ortakart {
+    padding: 10px 10px ;
+    box-shadow: 0 0 10px rgba(0, 255,0);
+ }
+ 
+
