@@ -46,15 +46,36 @@
     background-color: white;
     padding: 20px;
     width: 1200px;
-    height: 630px;
-    margin-top: 28px;
-    box-shadow: 0 0 10px rgba(0, 255,0);
+    height: 740px;
+    margin-top: 80px;
+    box-shadow: 0 0 10px rgba(214, 208, 208);
     z-index: 1;
  }
 
  #ortakart {
-    padding: 10px 10px ;
-    box-shadow: 0 0 10px rgba(0, 255,0);
+    box-shadow: 0 0 10px rgb(214, 208, 208);
+    padding: 20px 20px ;
+ }
+
+ #carouselExampleCaptions {
+    width: 50%;
+    height: 100%;
+    margin: auto;
+    margin-top: 20px;
+ }
+
+ .row {
+    display: flex;
+    justify-content: center;
+ }
+
+ .col-sm {
+    max-width: 600px;
+ }
+
+ .container-field {
+    background-color: white;
+    height: 150px;
  }
  
 
