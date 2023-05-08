@@ -1,0 +1,21 @@
+.navbar {
+    background-color: transparent !important;
+    border: none;
+  }
+  
+  .navbar-nav .nav-link {
+    background-color: transparent !important;
+    color: white;
+  }
+  
+
+.body {
+    background-image: url("/assets/giresun-manzara.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgba(48, 103, 54, 0.734);
+    background-blend-mode: overlay;
+
+}
+  
+
