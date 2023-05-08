@@ -7,15 +7,46 @@
     background-color: transparent !important;
     color: white;
   }
+
+  .navbar-nav .nav-link:hover {
+    color: green;
+    transition: all 0.5s ease;
+  }
   
 
 .body {
     background-image: url("/assets/giresun-manzara.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-color: rgba(48, 103, 54, 0.734);
+    background-color: rgba(44, 103, 45, 0.734);
     background-blend-mode: overlay;
-
+    background-attachment: fixed;
 }
   
+.jumbotron {
+    background-color: transparent !important;
+    color: white;
+    padding: 0px, 75px;
+}
 
+.layout {
+    margin-top: 20px;
+}
+
+.col1Last1 {
+    color: white;
+    text-align: center;
+    box-shadow: 2px;
+    margin-top: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+}
+
+.col1Last1:hover {
+    background-color: white;
+    color: green;
+    transition: all 1s ease;
+}
+
+  
+  
