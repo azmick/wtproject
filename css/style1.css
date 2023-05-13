@@ -1,8 +1,55 @@
-.card {
-    width: 200px;
-    height: 200px;
-    margin-left: 125px;
-}
-
-
-
+/* Genel stil ayarları */
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  /* Header stil ayarları */
+  header {
+    background-color: #f8f8f8;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  header p {
+    font-size: 20px;
+    margin-bottom: 0;
+  }
+  
+  /* Main stil ayarları */
+  main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  main h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  main h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  
+  main p {
+    margin-bottom: 15px;
+  }
+  
+  main ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  main li {
+    margin-bottom: 5px;
+  }
+  

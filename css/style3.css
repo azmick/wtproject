@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*,*::before, *::after {
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+
+.navbar {
+    background-color: transparent !important;
+    border: none;
+    margin-left: 50px;
+  }
+  
+  .navbar-nav .nav-link {
+    background-color: transparent !important;
+    color: white;
+  }
+
+  .navbar-nav .nav-link:hover {
+    color: green;
+    transition: all 0.5s ease;
+  }
+
+body {
+    background-image: url("/assets/giresun-kalesi-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgba(44, 103, 45, 0.734);
+    background-blend-mode: overlay;
+    background-attachment: fixed;
+}
+
+.jumbotron {
+    background-color: transparent;
+    color: white;
+    padding: 0.1px;
+}
+
+.row {
+    justify-content: center;
+    display: flex;
+}
+
+.card {
+  background-color: transparent !important;
+  color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#g {
+  width: 75%;
+}
+
+#g:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
+  z-index: 1;
+}
+
+#g-row {
+  margin-left: 65px;
+}
+
+#g-row2 {
+  margin-left: 65px;
+}
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.line {
+  border-top: 1px solid white;
+  margin: 20px 0;
+}
+
+h3 {
+  color: white;
+}
+
+#map {
+  margin-left: 70px;
+}
