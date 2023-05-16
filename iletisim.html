@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>İletişim Sayfası</title>
+  <link rel="stylesheet" href="css/iletisim.css">
+  <link rel="stylesheet" href="js/iletisim.js">
+</head>
+<body>
+  <h1>İletişim</h1>
+  <form id="contactForm" method="POST" action="process.php">
+    <input type="text" name="name" placeholder="Ad Soyad" required>
+    <input type="email" name="email" placeholder="E-posta Adresi" required>
+    <textarea name="message" placeholder="Mesajınız" required></textarea>
+    <button type="submit">Gönder</button>
+  </form>
+</body>
+</html>
