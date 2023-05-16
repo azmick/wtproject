@@ -1,3 +1,8 @@
+<?php
+// Kullanıcı adını al
+$username = $_POST['username'];
+?>
+
 <!doctype html>
 <html lang="en">
   <head>
