@@ -5,15 +5,49 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>İletişim Sayfası</title>
   <link rel="stylesheet" href="css/iletisim.css">
-  <link rel="stylesheet" href="js/iletisim.js">
+  <script src="js/iletisim.js" type="application/javascript"></script>
 </head>
 <body>
   <h1>İletişim</h1>
   <form id="contactForm" method="POST" action="process.php">
     <input type="text" name="name" placeholder="Ad Soyad" required>
     <input type="email" name="email" placeholder="E-posta Adresi" required>
+    <input type="password" name="password" placeholder="Şifre" required>
+    <label for="country">Ülke Seçiniz: </label>
+    <select name="country">
+      <option value="USA">Amerika</option>
+      <option value="UK">Birleşik Krallık</option>
+      <option value="Germany">Almanya</option>
+      <option value="TR">Türkiye</option>
+    </select><br><br>
+    
+    <div class="checkbox-group">
+      <label for="checkbox">Hobileriniz</label><br>
+      <label>
+        <input type="checkbox" name="hobbies[]" value="okuma"> Okuma
+      </label>
+  
+      <label>
+        <input type="checkbox" name="hobbies[]" value="müzik"> Müzik
+      </label>
+  
+      <label>
+        <input type="checkbox" name="hobbies[]" value="spor"> Spor
+      </label>
+    </div><br><br>
+    <div class="gender">
+      <label for="radio">Cinsiyetiniz:</label><br>
+      <label for="Erkek">Erkek</label>
+      <input type="radio" name="gender" value="Erkek">
+      <label for="Kadın">Kadın</label>
+      <input type="radio" name="gender" value="Kadın"> 
+    </div>
+    
+
     <textarea name="message" placeholder="Mesajınız" required></textarea>
+    <button type="button" id="checkButton">Kontrol Et</button>
     <button type="submit">Gönder</button>
+    <button type="reset">Temizle</button>
   </form>
 </body>
 </html>

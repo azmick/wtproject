@@ -3,9 +3,11 @@
 <head>
 	<title>Spotify API Search</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<script src="js/ilgialanlarim.js" type="application/javascript"></script>
 </head>
 <body>
-	<div class="container">
+<div class="container">
+	<div class="row">
 		<h1>Spotify API Search</h1>
 		<form>
 			<div class="form-group">
@@ -15,6 +17,20 @@
 			<button type="submit" class="btn btn-primary">Search</button>
 		</form>
 	</div>
+	<div id="tokenSection" class="row">
+		<div class="col">
+			<div class="mb-3">
+				<label for="clientId" class="form-label">Client ID</label>
+				<input type="text" class="form-control" id="clientId" placeholder="">
+			</div>
+			<div class="mb-3">
+				<label for="clientSecret" class="form-label">Client Secret</label>
+				<input type="text" class="form-control" id="clientSecret" placeholder="">
+			</div>
+			<input type="button" class="btn btn-primart btn-lg" onclick="requestAuthorization()" value="Request Authorization">
+		</div>
+	</div>
+</div>
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>

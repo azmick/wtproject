@@ -29,4 +29,22 @@ body {
   button:hover {
     background-color: #45a049;
   }
+
+  .checkbox-group {
+    display: inline-block;
+  }
+
+  .checkbox-group label {
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  .gender {
+    display: flex;
+    align-items: center;
+  }
+
+  .gender label {
+    margin-right: 10px;
+  }
   
