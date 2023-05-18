@@ -36,7 +36,8 @@ $username = $_POST['username'];
       </div>
     </div>
   </nav>
-    <h1>Hoşgeldiniz <?php echo $username; ?></h1>
+    <h1>Hoşgeldiniz </h1>
+    <h1 id=number><?php echo $username; ?></h1>
   <div class="profile-pic">
     <img class="profile-pic" src="assets/azmick.jpg" alt="">  
   </div>

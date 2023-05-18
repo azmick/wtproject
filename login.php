@@ -34,8 +34,8 @@ if (!filter_var($username, FILTER_VALIDATE_EMAIL)) {
 }
 
 // Kullanıcı adı ve şifre kontrolü
-$validUsername = "b1812100001@sakarya.edu.tr";
-$validPassword = "b1812100001";
+$validUsername = "g221210384@sakarya.edu.tr";
+$validPassword = "g221210384";
 
 if ($username === $validUsername && $password === $validPassword) {
     $redirectUrl = "aboutme.php"; // Yönlendirilecek sayfanın URL'si

@@ -5,6 +5,11 @@
 
 h1 {
 margin-left: 650px;
+color: green;
+}
+
+#number {
+margin-left: 530px;
 }
 
 .container {
