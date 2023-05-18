@@ -30,7 +30,7 @@ $username = $_POST['username'];
       <div class="navbar-nav">
       <a class="nav-link" href="cv.html">CV'm</a>
       <a class="nav-link" href="mycity.html">Şehrim</a>
-      <a class="nav-link" href="mirasımız.html">Mirasımız</a>
+      <a class="nav-link" href="mirasimiz.html">Mirasımız</a>
       <a class="nav-link" href="ilgialanlarim.html">İlgi Alanlarım</a>
       <a class="nav-link" href="iletisim.html">İletişim</a>
       </div>
