@@ -5,32 +5,77 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 	<script src="js/ilgialanlarim.js" type="application/javascript"></script>
 </head>
-<body>
-<div class="container">
-	<div class="row">
-		<h1>Spotify API Search</h1>
-		<form>
-			<div class="form-group">
-				<label for="search">Search for a song or artist:</label>
-				<input type="text" class="form-control" id="search" placeholder="Enter search term">
-			</div>
-			<button type="submit" class="btn btn-primary">Search</button>
-		</form>
-	</div>
-	<div id="tokenSection" class="row">
-		<div class="col">
-			<div class="mb-3">
-				<label for="clientId" class="form-label">Client ID</label>
-				<input type="text" class="form-control" id="clientId" placeholder="">
-			</div>
-			<div class="mb-3">
-				<label for="clientSecret" class="form-label">Client Secret</label>
-				<input type="text" class="form-control" id="clientSecret" placeholder="">
-			</div>
-			<input type="button" class="btn btn-primart btn-lg" onclick="requestAuthorization()" value="Request Authorization">
-		</div>
-	</div>
-</div>
+<body onload="onPageLoad()">
+    <div class="container">
+
+        <div id="tokenSection" class="row">
+            <div class="col">
+                <div class="mb-3">
+                    <label for="clientId" class="form-label">Client ID</label>
+                    <input type="text" class="form-control" id="clientId" placeholder="">
+                </div>
+                <div class="mb-3">
+                    <label for="clientSecret" class="form-label">Client Secret</label>
+                    <input type="text" class="form-control" id="clientSecret" placeholder="">
+                </div>
+                <input class="btn btn-primary btn-lg" type="button" onclick="requestAuthorization()" value="Request Authorization"><br/>
+            </div>
+        </div>
+
+        <div id="deviceSection" class="row">
+            <div class="col">
+
+                <div class="mb-3">
+                    <label for="devices" class="form-label">Cihazlar</label>
+                    <select id="devices" class="form-control">
+                    </select>
+                    <input class="btn btn-primary btn-sm mt-3" type="button" onclick="refreshDevices()" value="Refresh Devices">
+                    <input type="button" class="btn btn-dark btn-sm  mt-3" onclick="transfer()" value="Transfer">
+                </div>
+
+                <div class="mb-3">
+                    <label for="playlists" class="form-label">Calma Listeleri</label>
+                    <select id="playlists" class="form-control">
+                    </select>
+                    <input class="btn btn-primary btn-sm mt-3" type="button" onclick="refreshPlaylists()" value="Refresh Playlists">
+
+                </div>
+
+                <div class="mb-3">
+                    <label for="tracks" class="form-label">Sarkilar</label>
+                    <select id="tracks" class="form-control">
+                    </select>
+                    <input class="btn btn-primary btn-sm mt-3" type="button" onclick="fetchTracks()" value="Fetch Tracks">
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <input type="button" class="btn btn-dark" onclick="previous()" value="Prev">
+                        <input type="button" class="btn btn-dark" onclick="play()" value="Play">
+                        <input type="button" class="btn btn-dark" onclick="shuffle()" value="Shuffle">
+                        <input type="button" class="btn btn-dark" onclick="pause()" value="Pause">
+                        <input type="button" class="btn btn-dark" onclick="next()" value="Next">
+                    </div>
+                </div>
+
+
+                <div class="row  mt-3">
+                    <div class="col">
+                        <h1> Suanda Caliyor </h1>
+                        <input type="button" class="btn btn-primary btn-sm mt-3" onclick="currentlyPlaying()" value="Refresh Currently Playing">
+                        <div>
+                            <img id="albumImage" src="">
+                            <div id="trackTitle"></div>
+                            <div id="trackArtist"></div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
