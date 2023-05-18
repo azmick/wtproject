@@ -9,8 +9,8 @@ $username = $_POST['username'];
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/aboutme.css">
+    <script src="js/aboutme.js"></script>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -28,8 +28,11 @@ $username = $_POST['username'];
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
-        <a class="nav-link" href="cv.html">CV'm</a>
-        <a class="nav-link" href="mycity.html">Şehrim</a>
+      <a class="nav-link" href="cv.html">CV'm</a>
+      <a class="nav-link" href="mycity.html">Şehrim</a>
+      <a class="nav-link" href="mirasımız.html">Mirasımız</a>
+      <a class="nav-link" href="ilgialanlarim.html">İlgi Alanlarım</a>
+      <a class="nav-link" href="iletisim.html">İletişim</a>
       </div>
     </div>
   </nav>

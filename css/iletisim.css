@@ -1,3 +1,12 @@
+.nav-link {
+  color:green;
+}
+
+.navbar-nav .nav-link {
+  color: green;
+}
+
+
 body {
     font-family: Arial, sans-serif;
   }
